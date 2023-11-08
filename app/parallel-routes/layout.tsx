@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const title = 'Parallel Routes';
 
 export const metadata = {
@@ -27,6 +29,9 @@ export default function Layout({
           {views}
         </div>
       </div>
+      <Link href={'/parallel-routes'}>Home</Link>-
+      <Link href={'/parallel-routes/route'}>To Route</Link>-
+      <Link href={'/parallel-routes/impressions'}>To impressions</Link>
     </div>
   );
 }

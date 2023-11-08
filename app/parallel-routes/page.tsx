@@ -1,5 +1,6 @@
 import { Boundary } from '#/ui/boundary';
 import { ExternalLink } from '#/ui/external-link';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -47,6 +48,9 @@ export default function Page() {
           </ExternalLink>
         </div>
       </div>
+      <Link href={'/parallel-routes'}>Home</Link>-
+      <Link href={'/parallel-routes/route'}>To Route</Link>-
+      <Link href={'/parallel-routes/impressions'}>To impressions</Link>
     </Boundary>
   );
 }
